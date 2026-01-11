@@ -49,7 +49,7 @@ var (
 	tokenURL        = "https://api.xero.com/oauth/AccessToken"
 	endpointProfile = "https://api.xero.com/api.xro/2.0/"
 	// userAgentString should be changed to match the name of your Application
-	userAgentString    = os.Getenv("XERO_USER_AGENT") + " (goth-xero 1.0)"
+	userAgentString    = os.Getenv("XERO_USER_AGENT") + " (auth-xero 1.0)"
 	privateKeyFilePath = os.Getenv("XERO_PRIVATE_KEY_PATH")
 )
 
