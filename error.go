@@ -31,4 +31,22 @@ var (
 
 	// ErrInvalidTokenFromProvider ...
 	ErrInvalidTokenFromProvider = errors.New("invalid token received from provider")
+
+	// Password hashing errors
+	// ErrEmptyPassword is returned when password is empty
+	ErrEmptyPassword = errors.New("password cannot be empty")
+	// ErrInvalidPasswordFormat is returned when password format is invalid
+	ErrInvalidPasswordFormat = errors.New("password format is invalid")
+	// ErrPasswordTooShort is returned when password is too short
+	ErrPasswordTooShort = errors.New("password is too short")
+	// ErrPasswordTooLong is returned when password is too long
+	ErrPasswordTooLong = errors.New("password is too long")
+
+	// JWT errors
+	// ErrInvalidClaims is returned when JWT claims are invalid
+	ErrInvalidClaims = errors.New("invalid jwt claims")
+	// ErrInvalidKey is returned when JWT key is invalid
+	ErrInvalidKey = errors.New("invalid jwt key")
+	// ErrTokenGenerationFailed is returned when token generation fails
+	ErrTokenGenerationFailed = errors.New("failed to generate token")
 )
